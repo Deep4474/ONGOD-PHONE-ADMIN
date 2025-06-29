@@ -5,6 +5,9 @@
   <title>ONGOD Gadget Shop - Admin Panel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Admin panel for ONGOD Gadget Shop. Manage products, orders, and analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="admin-style.css" />
 </head>
 
@@ -22,9 +25,10 @@
           <label for="admin-email">Email:</label>
           <input type="email" id="admin-email" placeholder="admin@ongod.com" required autocomplete="email" />
         </div>
-        <div class="form-group">
+        <div class="form-group" style="position: relative;">
           <label for="admin-password">Password:</label>
           <input type="password" id="admin-password" placeholder="admin123" required autocomplete="current-password" />
+          <button type="button" id="toggle-admin-login-password" style="position: absolute; right: 10px; top: 32px; background: none; border: none; cursor: pointer;">👁️</button>
         </div>
         <button type="submit" class="btn-primary">Login</button>
         <p style="text-align:center; margin-top:1rem;">
